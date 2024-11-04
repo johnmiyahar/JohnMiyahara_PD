@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-bs- toggle="modal" data-bs-target="#myModal">
+        Open Modal
+    </button>
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">Modal content here...</div>
+            </div>
+        </div>
+    </div>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <!-- More nav items -->
+                <li class="nav-item active"><a class="nav-link" href="#">Browse</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">View Shopping Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Here's an example of a carousel in HTML!</p>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="carousel.jpg" alt="First Carousel" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="morecarousel.jpg" alt="Second Carousel" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="anothercarousel.jpg" alt="Third Carousel" class="d-block" style="width:100%">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+</body>
+
+</html>
