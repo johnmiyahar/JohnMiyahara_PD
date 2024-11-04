@@ -10,32 +10,39 @@ body {
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
     color: #333;
+    background: linear-gradient(to bottom, #4e5854, #2e3b36); /* Background for the body */
+}
+
+/* Specific page background color for the Home section */
+#home {
+    background-color: rgba(46, 46, 46, 0.7); /* Keep the home section as it is */
+    color: white;
+}
+
+/* Apply the same background color to all other sections */
+section {
+    background-color: rgba(46, 46, 46, 0.7); /* Change this to match the Home section */
+    color: white;
 }
 
 /* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #111;
+    background-color: #010508;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    margin-left: 1rem;
-    position: relative;
-}
-
+/* Remaining CSS styles */
 .navbar .logo {
     font-weight: bold;
     color: #00c;
     font-size: 1.5rem;
+    margin-right: 1rem;
 }
 
 .navbar .nav-links {
@@ -43,10 +50,30 @@ body {
     align-items: center;
 }
 
-/* Dropdown Menu */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover,
+.dropdown > a:hover,
+.dropdown:hover > a {
+    color: #70b3fe;
+    transform: scale(1.1);
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
+}
+
+.dropdown > a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .dropdown-content {
@@ -63,35 +90,65 @@ body {
     display: block;
     padding: 0.5rem;
     color: white;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.dropdown-content a:hover {
+    color: #70b3fe;
+    transform: scale(1.05);
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Section Styles */
-section {
+/* Flex Section Styles */
+.flex-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 100px 20px;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
-#home {
-    background-color: #2e2e2e;
-    color: white;
+.reverse {
+    flex-direction: row-reverse;
 }
 
-#about, #contact {
-    background-color: #4f4f4f;
-    color: white;
+.text-container {
+    flex: 1;
+    padding: 20px;
+    text-align: left; /* Align text to the left */
 }
 
-#design, #development {
-    background-color: #686868;
-    color: white;
+/* Increased size for About Me section text */
+#about p {
+    font-size: 1.75rem; /* Make the description text bigger */
+}
+
+/* Profile Photo */
+.profile-photo {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
+/* Section Styles */
+section h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    font-size: 1.5rem; /* Default size for other section paragraphs */
 }
 
 /* Footer */
