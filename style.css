@@ -1,0 +1,103 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    color: #00c;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #333;
+    min-width: 120px;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.5rem;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Section Styles */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#home {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+#about, #contact {
+    background-color: #4f4f4f;
+    color: white;
+}
+
+#design, #development {
+    background-color: #686868;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #111;
+    color: white;
+}
