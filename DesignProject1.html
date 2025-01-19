@@ -3,111 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title</title>
+
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images/jrmlogo.png" alt="Logo" height="100px"/></a>
-        </div>
+        <div class="logo"><img src="images/jrmlogo.png" alt="Logo" height="100px"/></div>
         <div class="nav-links">
-            <a href="index.html#home">Home</a>
-            <a href="index.html#about">About Me</a>
-            <a href="index.html#projects">Projects</a>
-            <a href="index.html#contact">Contact Me</a>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <div class="dropdown">
+                <a href="#projects">Projects</a>
+                <div class="dropdown-content">
+                    <a href="#design">Design</a>
+                    <a href="#development">Development</a>
+                    <a href="#music">Music</a>
+                    <a href="#photography">Photography</a>
+                </div>
+            </div>
+            <a href="#contact">Contact Me</a>
         </div>
     </nav>
-
-    <!-- Project Section -->
-    <main class="project-page">
-        <div class="project-content">
-            <!-- Project Details -->
-            <div class="project-text">
-                <h1>Project Title</h1>
-                <p>This is where the description of the project goes. Include any details about the purpose, inspiration, and process for the project.</p>
-            </div>
-            
-            <!-- Media Section -->
-            <div class="project-media">
-                <!-- Replace with media content -->
-                <img src="images/project-placeholder.jpg" alt="Project Media" width="100%">
-                <!-- Example for video -->
-                <!-- <video controls width="100%">
-                    <source src="videos/project-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video> -->
-            </div>
+    <section id="home" class="flex-section">
+        <div class="text-container">
+            <h1>John Miyahara</h1>
+            <p>Designer, Developer, Musician</p>
         </div>
-    </main>
+        <img src="images/profilephoto.jpg" alt="My Profile Photo" height="250px" class="profile-photo"/>
+    </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 John Miyahara. All rights reserved.</p>
     </footer>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            padding: 1rem;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .project-page {
-            padding: 2rem;
-        }
-
-        .project-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            align-items: flex-start;
-        }
-
-        .project-text, .project-media {
-            flex: 1 1 45%;
-            min-width: 300px;
-        }
-
-        .project-text {
-            font-size: 1rem;
-        }
-
-        .project-media img, .project-media video {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: white;
-        }
-
-        @media (max-width: 768px) {
-            .project-content {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+    
 </body>
 </html>
