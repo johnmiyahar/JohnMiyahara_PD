@@ -32,9 +32,9 @@
             <!-- Media Section -->
             <div class="project-media">
                 <!-- Replace with media content -->
-                <img src="images/project-placeholder.jpg" alt="Project Media" width="400px">
+                <img src="images/project-placeholder.jpg" alt="Project Media" width="100%">
                 <!-- Example for video -->
-                <!-- <video controls width="400">
+                <!-- <video controls width="100%">
                     <source src="videos/project-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video> -->
@@ -46,5 +46,68 @@
     <footer>
         <p>&copy; 2024 John Miyahara. All rights reserved.</p>
     </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .project-page {
+            padding: 2rem;
+        }
+
+        .project-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .project-text, .project-media {
+            flex: 1 1 45%;
+            min-width: 300px;
+        }
+
+        .project-text {
+            font-size: 1rem;
+        }
+
+        .project-media img, .project-media video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .project-content {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </body>
 </html>
