@@ -165,9 +165,15 @@
     <section id="contact" class="flex-section">
         <div class="text-container">
             <h2>Contact Me</h2>
-            <p>Contact me through my details below or simply clicking on the preferred platform icon!</p>
+            <p>Contact me through completing the form below, simply clicking on the preferred platform icon, or through my Email address or phone number below!</p>
             <br>
             <br>
+
+            <p>Email:</p>
+            <a href="mailto:johnmiyahar@gmail.com">johnmiyahar@gmail.com</a>
+
+            <p>Phone Number:</p>
+            <a href="tel:+6591149758">+65 9114 9758</a>
     
             <!-- Contact Form -->
             <form id="contactForm" onsubmit="clearForm(event)">
@@ -203,9 +209,7 @@
     
     <script>
         function clearForm(event) {
-            event.preventDefault(); // Prevent form from submitting normally
     
-            // Clear all input fields
             document.getElementById('contactForm').reset();
     
             alert('Thank you! Your form has been submitted.');
