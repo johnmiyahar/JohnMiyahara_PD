@@ -42,7 +42,6 @@ section {
 .navbar .nav-links {
     display: flex;
     align-items: center;
-    margin-right: auto;
 }
 
 .navbar a {
