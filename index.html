@@ -10,7 +10,10 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo"><img src="images/jrmlogo.png" alt="Logo" height="100px"/></div>
+        <div class="logo">
+            <img src="images/jrmlogo.png" alt="Logo" height="100px"/>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About Me</a>
@@ -26,6 +29,7 @@
             <a href="#contact">Contact Me</a>
         </div>
     </nav>
+    
 
     <section id="home" class="flex-section">
         <div class="text-container">
@@ -175,11 +179,11 @@
             <a href="mailto:johnmiyahar@gmail.com">johnmiyahar@gmail.com</a>
 
             <p>Phone Number:</p>
-            <a href="tel:+6591149758">+65 9114 9758</a>
+            <a href="tel: +6591149758">+65 9114 9758</a>
 
             <br>
     
-            <!-- Contact Form -->
+            <!-- Contact form -->
             <form id="contactForm" onsubmit="clearForm(event)">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
@@ -196,7 +200,7 @@
                 <button type="submit">Submit</button>
             </form>
     
-            <!-- Social Media Links -->
+            <!-- Social mdeia links -->
             <a href="https://www.instagram.com/johnmiyahar" target="_blank">
                 <img src="images/ig.png" alt="Instagram" height="50px" />
             </a>
@@ -217,6 +221,10 @@
             document.getElementById('contactForm').reset();
     
             alert('Thank you! Your form has been submitted.');
+        }
+
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('show');
         }
     </script>
     
