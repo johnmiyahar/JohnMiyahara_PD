@@ -9,8 +9,10 @@
     <link rel="icon" type="image/png" href="images/jrmlogo.png">
 </head>
 <body>
+    <a href="#home" class="skip-link">Skip to main content</a>
     <nav class="navbar">
         <div class="logo"><img src="images/jrmlogo.png" alt="John Miyahara Logo" loading="lazy"/></div>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
         <div class="nav-links">
             <a href="index.html">Home</a>
         </div>
@@ -35,5 +37,15 @@
         <p>&copy; 2026 John Miyahara.</p>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const isOpen = navLinks.classList.contains('show');
+            
+            navLinks.classList.toggle('show');
+            menuToggle.setAttribute('aria-expanded', !isOpen);
+        }
+    </script>
 </body>
 </html>

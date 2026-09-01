@@ -34,28 +34,22 @@
     <section id="home" class="flex-section">
         <div class="text-container">
             <h1>John Miyahara</h1>
-            <p>Designer, Developer, Musician</p>
+            <p style="font-size: 1.125rem; color: #6b7280; margin-top: 0.5rem;">Designer, Developer, Musician</p>
         </div>
         <img src="images/profilephoto.jpg" alt="My Profile Photo" class="profile-photo" loading="lazy"/>
     </section>
 
-    <section id="about" class="flex-section reverse">
+    <section id="about" class="flex-section">
         <div class="text-container">
-            <br>
             <h2>About Me</h2>
-            <br>
             <p>Hello, welcome to my portfolio! I'm John Miyahara, a Digital Design & Development student at Republic Polytechnic. In this website that I have programmed from scratch, you will be able to see my previous works as an aspiring audio and visual designer and developer.</p>
-            <br>
-            <p>Aside from academics, however, I also indulge in playing musical instruments as a member of Republic Polytechnic's acoustic band called Replug. Having been in the group for more than 2 years now, I have served as their Music Director for the year of AY2023/2024, and currently serve as their Student Advisor.</p>
-            <br>
-            <p>Do feel free to explore my projects and contact me at the 'Contact Me' page if you would like to get in touch!</p>
+            <p style="margin-top: 1rem;">Aside from academics, however, I also indulge in playing musical instruments as a member of Republic Polytechnic's acoustic band called Replug. Having been in the group for more than 2 years now, I have served as their Music Director for the year of AY2023/2024, and currently serve as their Student Advisor.</p>
+            <p style="margin-top: 1rem;">Do feel free to explore my projects and contact me at the 'Contact Me' page if you would like to get in touch!</p>
         </div>
     </section>
 
     <section id="design" class="flex-section project-section">
         <div class="text-container">
-            <br>
-            <br>
             <h2>Design Projects</h2>
             <p>Below are the designs I have made!</p>
         </div>
@@ -81,10 +75,8 @@
         </div>
     </section>
 
-    <section id="development" class="flex-section reverse project-section">
+    <section id="development" class="flex-section project-section">
         <div class="text-container">
-            <br>
-            <br>
             <h2>Development Projects</h2>
             <p>Here are my development projects, where I specialise in programming and functionality.</p>
         </div>
@@ -112,8 +104,6 @@
 
     <section id="music" class="flex-section project-section">
         <div class="text-container">
-            <br>
-            <br>
             <h2>Music Projects</h2>
             <p>Starting off in Replug, I have been very fortunate to have received multiple opportunities to perform outside of RP, such as Esplanade, Charity Galas, Weddings, and other events!</p>
         </div>
@@ -141,8 +131,6 @@
 
     <section id="photography" class="flex-section project-section">
         <div class="text-container">
-            <br>
-            <br>
             <h2>Photography Projects</h2>
             <p>In my free time, I also like to explore the world around me by documenting the sceneries of the places I visit or travel to.</p>
         </div>
@@ -171,49 +159,49 @@
     <section id="contact" class="flex-section">
         <div class="text-container">
             <h2>Contact Me</h2>
-            <p>Contact me through completing the form below, simply clicking on the preferred platform icon, or through my Email address or phone number below!</p>
-            <br>
-            <br>
+            <p>Contact me through completing the form below, or connect with me via email, phone, or social media!</p>
 
             <!-- Contact form -->
             <form id="contactForm" onsubmit="clearForm(event)">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-    
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required><br><br>
-    
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-    
-                <button type="submit">Submit</button>
+                <div style="text-align: left;">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+        
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+65 9114 9758" required>
+        
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+        
+                    <button type="submit">Send Message</button>
+                </div>
             </form>
-            <br>
-            <br>
 
-            <p>Email:</p>
-            <a href="mailto:johnmiyahar@gmail.com">johnmiyahar@gmail.com</a>
+            <div style="margin-top: 2rem; text-align: left;">
+                <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">Email</h3>
+                <a href="mailto:johnmiyahar@gmail.com">johnmiyahar@gmail.com</a>
 
-            <p>Phone Number:</p>
-            <a href="tel: +6591149758">+65 9114 9758</a>
+                <h3 style="font-size: 1rem; font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">Phone</h3>
+                <a href="tel:+6591149758">+65 9114 9758</a>
 
-            <br>
-    
-            <!-- Social media links -->
-            <a href="https://www.instagram.com/johnmiyahar" target="_blank" rel="noopener noreferrer">
-                <img src="images/ig.png" alt="Instagram" loading="lazy" />
-            </a>
-    
-            <a href="https://www.youtube.com/@johnmiyahar" target="_blank" rel="noopener noreferrer">
-                <img src="images/yt.png" alt="YouTube" loading="lazy" />
-            </a>
-    
-            <a href="https://www.linkedin.com/in/john-miyahara-0b4734272" target="_blank" rel="noopener noreferrer">
-                <img src="images/linkedin.png" alt="LinkedIn" loading="lazy" />
-            </a>
+                <h3 style="font-size: 1rem; font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">Follow Me</h3>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="https://www.instagram.com/johnmiyahar" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <img src="images/ig.png" alt="Instagram" loading="lazy" />
+                    </a>
+            
+                    <a href="https://www.youtube.com/@johnmiyahar" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <img src="images/yt.png" alt="YouTube" loading="lazy" />
+                    </a>
+            
+                    <a href="https://www.linkedin.com/in/john-miyahara-0b4734272" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img src="images/linkedin.png" alt="LinkedIn" loading="lazy" />
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
     
