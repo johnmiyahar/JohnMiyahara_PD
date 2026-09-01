@@ -1,16 +1,16 @@
 :root {
     --color-primary: #00c;
     --color-accent: #70b3fe;
-    --color-text-light: #ffffff;
-    --color-text-dark: #ffffff;
-    --color-text-muted: #aaa;
-    --color-bg-light: rgba(46, 46, 46, 0.7);
-    --color-bg-gradient-start: #4e5854;
-    --color-bg-gradient-end: #2e3b36;
+    --color-text-light: #70b3fe;
+    --color-text-dark: #000000;
+    --color-text-muted: #00c;
+    --color-bg-light: #000000;
+    --color-bg-gradient-start: #010409;
+    --color-bg-gradient-end: #000000;
     --color-navbar: #010409;
-    --color-footer: #111;
-    --color-border: #333;
-    --color-form-bg: rgba(0, 0, 0, 0.7);
+    --color-footer: #010409;
+    --color-border: #00c;
+    --color-form-bg: #000000;
     --transition-smooth: 0.3s;
     --border-radius: 8px;
     --spacing-xs: 0.25rem;
@@ -570,12 +570,12 @@ footer {
     }
     
     body {
-        background: white;
-        color: #000;
+        background: #000;
+        color: #00c;
     }
     
     section {
         page-break-inside: avoid;
-        background: white;
+        background: #000;
     }
 }
