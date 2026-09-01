@@ -224,6 +224,22 @@ section {
     max-width: 500px;
 }
 
+#home > img,
+#home > video,
+#home img,
+#home video {
+    display: block;
+    width: min(88vw, 820px);
+    max-height: 80vh;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+    background: rgba(11, 16, 32, 0.3);
+}
+
 .project-section {
     padding: var(--spacing-2xl) var(--spacing-xl);
     min-height: auto;
@@ -453,6 +469,13 @@ section p {
     .project-image-container {
         width: 100%;
         max-width: 100%;
+    }
+
+    #home > img,
+    #home > video,
+    #home img,
+    #home video {
+        width: min(92vw, 560px);
     }
 
     .project-title {
