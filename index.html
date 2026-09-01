@@ -34,7 +34,7 @@
     <section id="home" class="flex-section">
         <div class="text-container">
             <h1>John Miyahara</h1>
-            <p style="font-size: 1.125rem; color: #6b7280; margin-top: 0.5rem;">Designer, Developer, Musician</p>
+            <p class="eyebrow">Designer, Developer, Musician</p>
         </div>
         <img src="images/profilephoto.jpg" alt="My Profile Photo" class="profile-photo" loading="lazy"/>
     </section>
@@ -162,8 +162,8 @@
             <p>Contact me through completing the form below, or connect with me via email, phone, or social media!</p>
 
             <!-- Contact form -->
-            <form id="contactForm" onsubmit="clearForm(event)">
-                <div style="text-align: left;">
+            <form id="contactForm" onsubmit="clearForm(event)" class="contact-form-inner">
+                <div class="contact-form-stack">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name" required>
         
@@ -180,15 +180,15 @@
                 </div>
             </form>
 
-            <div style="margin-top: 2rem; text-align: left;">
-                <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">Email</h3>
+            <div class="contact-meta">
+                <h3>Email</h3>
                 <a href="mailto:johnmiyahar@gmail.com">johnmiyahar@gmail.com</a>
 
-                <h3 style="font-size: 1rem; font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">Phone</h3>
+                <h3>Phone</h3>
                 <a href="tel:+6591149758">+65 9114 9758</a>
 
-                <h3 style="font-size: 1rem; font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem;">Follow Me</h3>
-                <div style="display: flex; gap: 1rem;">
+                <h3>Follow Me</h3>
+                <div class="social-links">
                     <a href="https://www.instagram.com/johnmiyahar" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <img src="images/ig.png" alt="Instagram" loading="lazy" />
                     </a>
